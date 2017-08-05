@@ -609,7 +609,8 @@
 	  value: true
 	});
 	var config = {
-	  mongoURL: process.env.MONGO_URL || 'mongodb://localhost:27017/magic-blog-exam',
+      mongoHOST: process.env.MONGODB_HOST || 'localhost',
+      mongoURL: 'mongodb://'+mongoHOST+':27017/magic-blog-exam',
 	  port: process.env.PORT || 8000
 	};
 
