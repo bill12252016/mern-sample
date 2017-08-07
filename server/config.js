@@ -1,5 +1,7 @@
+var mongoHOST=process.env.MONGODB_HOST || 'localhost';
+
 const config = {
-  mongoHOST: process.env.MONGODB_HOST || 'localhost',
+  mongoHOST: mongoHOST,
   mongoURL: 'mongodb://'+mongoHOST+':27017/magic-blog-exam',
   port: process.env.PORT || 8000,
 };

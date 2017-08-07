@@ -608,8 +608,9 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+    var mongoHOST=process.env.MONGODB_HOST || 'localhost';
 	var config = {
-      mongoHOST: process.env.MONGODB_HOST || 'localhost',
+      mongoHOST: mongoHOST,
       mongoURL: 'mongodb://'+mongoHOST+':27017/magic-blog-exam',
 	  port: process.env.PORT || 8000
 	};
