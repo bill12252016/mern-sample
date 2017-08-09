@@ -4,7 +4,7 @@ arguments:
      DockerUsername:  williaumwu
      DockerConfigEnv: public
      DockerRepoName: mern-blog
-     num_of_dbs: 1
+     num_of_dbs: 3
      db_size: t2.micro
      schedule:
          vpc:
@@ -15,12 +15,12 @@ arguments:
                 cleanup:
                     instance: clear
              conditions:
-                 retries: 1
+                retries: 2
              failure:
                 delete_primary_instance: True
          db:
              conditions:
-                 retries: 1
+                 retries: 2
                  dependency:
                      - vpc
              archive:
