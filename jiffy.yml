@@ -4,7 +4,7 @@ arguments:
      DockerUsername:  williaumwu
      DockerConfigEnv: public
      DockerRepoName: mern-blog
-     num_of_dbs: 3
+     num_of_dbs: 1
      db_size: t2.micro
      schedule:
          vpc:
