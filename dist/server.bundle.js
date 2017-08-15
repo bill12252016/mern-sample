@@ -3288,7 +3288,7 @@
 
 	var _ref = _jsx('h1', {}, void 0, 'Magic Blog');
 
-    var _ref2 = _jsx('h2', {}, void 0, 'x6sNxgeK');
+    var _ref2 = _jsx('h2', {}, void 0, 'fVbQBdeq');
 
 	var Header = function Header() {
 	  return _jsx(_reactParallax.Parallax, {
