@@ -1,9 +1,9 @@
 stack_name: Projects/Sample/Mern/VPC/main
 arguments:
      DockerProvider: docker.io
-     DockerUsername:  williaumwu
+     DockerUsername:  bill12252016
      DockerConfigEnv: public
-     DockerRepoName: mern-blog
+     DockerRepoName: mern-sample
      num_of_dbs: 1
      db_size: t2.micro
      schedule:
