@@ -1,4 +1,4 @@
-stack_name: Stacks/CD/Mern/Prod/main
+stack_name: Stacks/CD/Mern/Dev/main
 arguments:
      DockerProvider: docker.io
      DockerUsername:  bill12252016
