@@ -31,7 +31,7 @@ arguments:
                     instance: clear
          dockerhost:
              conditions:
-                 retries: 0
+                 retries: 1
                  dependency:
                      - vpc
              archive:
