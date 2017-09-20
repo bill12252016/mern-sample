@@ -20,22 +20,11 @@ arguments:
                 delete_primary_instance: True
          db:
              conditions:
-                 retries: 0
-                 dependency:
-                     - vpc
-             archive:
-                description: Create Mongodb Replica Set
-                timeout: 3600
-                timewait: 300
-                cleanup:
-                    instance: clear
-         dockerhost:
-             conditions:
                  retries: 1
                  dependency:
                      - vpc
              archive:
-                description: Create hot docker host
+                description: Create Mongodb Replica Set
                 timeout: 3600
                 timewait: 300
                 cleanup:
