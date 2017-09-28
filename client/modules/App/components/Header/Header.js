@@ -11,7 +11,7 @@ const Header = () => (
         <div className={`${fbStyles.row}`}>
           <div className={styles['header-copy']}>
             <h1>Magic Blog</h1>
-            <h2>v7sYuA3P</h2>
+            <h2>Lg5bHe0X</h2>
           </div>
         </div>
       </div>
