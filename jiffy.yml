@@ -6,6 +6,7 @@ arguments:
      DockerRepoName: mern-sample
      num_of_dbs: 1
      db_size: t2.micro
+     size: t2.micro
      schedule:
          vpc:
              archive:
