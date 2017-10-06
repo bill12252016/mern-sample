@@ -1,6 +1,6 @@
 stack_name: Stacks/CD/Mern/Dev/main
 arguments:
-     JinjaTest: {{ METEOR_SETTINGS }}
+     JinjaTest: '{{ METEOR_SETTINGS }}'
      DockerProvider: docker.io
      DockerUsername:  bill12252016
      DockerConfigEnv: public
