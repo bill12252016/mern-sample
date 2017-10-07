@@ -12,11 +12,7 @@ arguments:
      db_size: t2.micro
      size: t2.micro
      schedule:
-        EnvVars:
-           John: '{{ TestVar1 }}'
         vpc:
-            EnvVars:
-               Tommy: '{{ TestVar2 }}'
             archive:
                description: Create VPC in AWS
                timeout: 3600
