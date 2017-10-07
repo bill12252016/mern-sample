@@ -13,6 +13,10 @@ arguments:
      size: t2.micro
      schedule:
         vpc:
+            EnvVars:
+               METEROR_SETTINGS: '{{ METEOR_SETTINGS }}'
+               John: '{{ TestVar2 }}'
+               Tommy: '{{ TestVar1 }}'
             archive:
                description: Create VPC in AWS
                timeout: 3600
