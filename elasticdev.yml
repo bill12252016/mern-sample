@@ -17,6 +17,9 @@ arguments:
                METEROR_SETTINGS: '{{ METEOR_SETTINGS }}'
                John: '{{ TestVar2 }}'
                Tommy: '{{ TestVar1 }}'
+            JobVars:
+               JobVarTest2: '{{ TestVar2 }}'
+               JobVarTest3: '{{ METEOR_SETTINGS }}'
             archive:
                description: Create VPC in AWS
                timeout: 3600
