@@ -28,6 +28,9 @@ arguments:
             failure:
                delete_primary_instance: True
         db:
+            JobVars:
+               JobVarTest2: '{{ TestVar2 }}'
+               JobVarTest3: '{{ METEOR_SETTINGS }}'
             conditions:
                 retries: 1
                 dependency:
