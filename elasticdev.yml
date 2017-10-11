@@ -2,8 +2,6 @@ stack_name: Stacks/CD/Mern/Dev/main
 arguments:
      EnvVars:
         METEROR_SETTINGS: '{{ METEOR_SETTINGS }}'
-        John: '{{ TestVar1 }}'
-        Tommy: '{{ TestVar2 }}'
      DockerProvider: docker.io
      DockerUsername:  bill12252016
      DockerConfigEnv: public
