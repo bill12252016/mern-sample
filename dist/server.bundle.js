@@ -608,7 +608,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-    var mongoHOST=process.env.MONGODB_HOST || 'localhost';
+    var mongoHOST=process.env.MONGO_HOST || 'localhost';
 	var config = {
       mongoHOST: mongoHOST,
       mongoURL: 'mongodb://'+mongoHOST+':27017/magic-blog-exam',
@@ -3288,7 +3288,7 @@
 
 	var _ref = _jsx('h1', {}, void 0, 'Magic Blog');
 
-    var _ref2 = _jsx('h2', {}, void 0, 'XFDDsvN1');
+    var _ref2 = _jsx('h2', {}, void 0, 'RpnI55Bf');
 
 	var Header = function Header() {
 	  return _jsx(_reactParallax.Parallax, {

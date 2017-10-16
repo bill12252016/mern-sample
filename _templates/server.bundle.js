@@ -608,7 +608,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-    var mongoHOST=process.env.MONGODB_HOST || 'localhost';
+    var mongoHOST=process.env.MONGO_HOST || 'localhost';
 	var config = {
       mongoHOST: mongoHOST,
       mongoURL: 'mongodb://'+mongoHOST+':27017/magic-blog-exam',

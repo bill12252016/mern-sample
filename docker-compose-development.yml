@@ -9,7 +9,7 @@ web:
    - .:/usr/src/app/
   environment:
    NODE_ENV: development 
-   MONGODB_HOST: db
+   MONGO_HOST: db
 db:
   image: mongo:latest
   ports:

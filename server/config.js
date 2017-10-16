@@ -1,4 +1,4 @@
-var mongoHOST=process.env.MONGODB_HOST || 'localhost';
+var mongoHOST=process.env.MONGO_HOST || 'localhost';
 
 const config = {
   mongoHOST: mongoHOST,
