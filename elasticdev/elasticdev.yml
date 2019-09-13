@@ -24,11 +24,11 @@ build:
        stack_name: elasticdev:::ec2_ci_fastest
        arguments:
            repo_url: https://github.com/bill12252016/mern-sample
-           repo_branch: master
+           repo_branch: dev
            dockerfile: Dockerfile
            dockerfile_test: Dockerfile_test
            triggered_branches:
-             - master
+             - dev
 destroy:
    stack_name: elasticdev:::ed_core::callback_delete
    arguments:
