@@ -1,0 +1,34 @@
+global_arguments:
+   aws_default_region: us-west-1
+   docker_repo: flask_sample
+infrastructure:
+   ecr_repo:
+       stack_name: elasticdev:::ecr_repo
+       arguments:
+          name: flask_sample
+   dockerhost:
+       stack_name: elasticdev:::ec2_docker_host
+       arguments:
+          hostname: docker_flask_sample
+          size: t2.micro
+          disksize: 25
+       stack_vars:
+           - name: elasticdev:::ubuntu::ec2_ubuntu
+             arguments:
+                  ip_key: public_ip
+build:
+   ci_example:
+       dependencies: 
+           - infrastructure::dockerhost
+           - infrastructure::ecr_repo
+       stack_name: elasticdev:::ec2_ci
+       arguments:
+           docker_host: docker_flask_sample
+           repo_url: https://github.com/williaumwu/flask_sample
+           repo_branch: master
+           triggered_branches:
+             - master
+destroy:
+   stack_name: elasticdev:::ed_core::callback_delete
+   arguments:
+       pre_delete_resources: True

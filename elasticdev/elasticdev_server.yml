@@ -1,0 +1,18 @@
+global_arguments:
+   aws_default_region: us-west-1
+   docker_repo: flask_sample
+infrastructure:
+   dockerhost:
+       stack_name: elasticdev:::ec2_docker_host
+       arguments:
+          hostname: docker_flask_sample
+          size: t2.micro
+          disksize: 25
+       stack_vars:
+           - name: elasticdev:::ubuntu::ec2_ubuntu
+             arguments:
+                  ip_key: public_ip
+destroy:
+   stack_name: elasticdev:::ed_core::callback_delete
+   arguments:
+       pre_delete_resources: True
