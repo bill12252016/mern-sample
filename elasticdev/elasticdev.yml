@@ -9,7 +9,7 @@ infrastructure:
    dockerhost:
        stack_name: elasticdev:::ec2_docker_host
        arguments:
-          size: t2.micro
+          size: t2.medium
           disksize: 25
        stack_vars:
            - name: elasticdev:::ubuntu::ec2_ubuntu
