@@ -80,7 +80,7 @@
     "mock-css-modules": "^1.0.0",
     "mockgoose": "^6.0.3",
     "moment": "^2.15.2",
-    "mongoose": "^4.4.20",
+    "mongoose": "^5.7.8",
     "mongoose-paginate": "^5.0.3",
     "newrelic": "^1.34.0",
     "nock": "^8.0.0",
